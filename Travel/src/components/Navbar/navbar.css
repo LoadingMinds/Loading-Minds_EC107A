@@ -1,31 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
 .nav__container{
     background-color: rgba(164, 167, 185, 1);
     
 }
 .nav{
     
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 0px 0px 25px 25px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-  
-
-
-width: max-content;
-justify-content: center;
-padding:0.7rem 2.7rem ;
-top: 0;
-position: fixed;
-margin-left:50%;
-transform:translateX(-50%);
-z-index: 1000;
-display:flex;
-gap:0.8rem;
-backdrop-filter: blur( 13px );
--webkit-backdrop-filter: blur( 13px );
-box-shadow: 0px 4px 3.5px 0px rgba(0, 0, 0, 0.15);
-
+  position: fixed;
+  left: 50%;
+  top:5%;
+  transform: translateX(-50%);
+  background-color: var(--secondary_color2);
+  overflow: hidden;
+  padding: 0 10px;
+  border-radius: 15px;
+  width: 70%;
+  margin: 0 auto;
+  font-family: 'Myriad Pro', sans-serif;
+  font-weight: bolder;
+  z-index: 1000;
+  backdrop-filter: blur( 13px );
+  -webkit-backdrop-filter: blur( 13px );
+  box-shadow: 0px 4px 3.5px 0px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
 
 }
 .ham{
@@ -38,7 +38,7 @@ align-items: center;
 padding: 15px 15px 15px 15px;
 border-radius:50%;
 display:flex;
-color:#7D7C78;
+color:var(--secondary_color2);
 font-size:1.1rem;
 text-align: center;
 text-decoration: none;

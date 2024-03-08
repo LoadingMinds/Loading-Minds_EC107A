@@ -10,6 +10,11 @@ const Home = () => {
     <div id="home" className='main__container section__padding'>
       <img src={Logo} alt="Logo" className="logo" style={{ width: '150px', height: 'auto' }} />
 
+      <div className='auth-buttons'>
+        <button className='login'>My Account</button>
+        {/* <button className='register'>Register</button> */}
+      </div>
+
       <p className='text glow'>
         <span className='special-font no-glow'>Discover, Explore, Wander</span> - Your Ultimate Travel Companion!
       </p>

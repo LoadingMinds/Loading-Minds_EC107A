@@ -7,7 +7,19 @@
     width:100%;
 }
 
-.section__padding
+/* .section__padding
 {
     padding: 2rem;
+} */
+:root{
+    --background: #162237;
+    --primary_color: rgb(198, 43, 102);
+    --secondary_color: #090614;
+    --secondary_color2: #7D7C78;
+    --text_color: #7D7C78;
+    /* --third_color: #FFE696; */
+
+    --pc-large:80px;
+    --pc-medium:40px;
+    --pc-small:20px;
 }
