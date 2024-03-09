@@ -102,6 +102,10 @@
   {
     margin-bottom:30px
   }
+  .image img {
+    width: 100%;
+    height: auto;
+  }
 }
 @media (max-width:767px)
 {
@@ -112,6 +116,10 @@
   .site-footer .copyright-text,.site-footer .social-icons
   {
     text-align:center
+  }
+  .image img {
+    width: 100%;
+    height: auto;
   }
 }
 .social-icons
@@ -183,6 +191,11 @@
     display:block;
     margin-right:0;
     font-weight:600
+  }
+
+  .image img {
+    width: 100%;
+    height: auto;
   }
 }
 

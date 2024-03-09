@@ -67,10 +67,14 @@
     font-style: italic;
     font-size: larger;
     color: #fff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
   }
-  /* .glow {
-    text-shadow: 0 0 5px #ffffff, 0 0 5px #ffffff, 0 0 5px #ffffff, 0 0 5px #ffffff; 
-  } */
+  .glow {
+    /* text-shadow: 0 0 5px #ffffff, 0 0 5px #ffffff, 0 0 5px #ffffff, 0 0 5px #ffffff;  */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+  }
   .no-glow {
     text-shadow: none;
   }

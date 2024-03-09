@@ -35,7 +35,7 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-8 col-sm-6 col-xs-12">
-            <p className="copyright-text">Copyright &copy; Made with ❤ Loading Minds
+            <p className="copyright-text">Copyright &copy; Made with <span className='heart'>❤</span> Loading Minds
             </p>
           </div>
         </div>
