@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
 .booking-section{
   padding: 2rem;
   background-color:rgba(22, 34, 55, 1);
   position: relative;
   padding-top: 50px;
   padding-bottom: 30px;
+  /* font-family: 'Hind Madurai', sans-serif; */
 }.booking-section {
   padding: 2rem;
 }
@@ -90,8 +93,12 @@
 }
 
 .card-title {
-  color: #333;
+  color: rgb(198, 43, 102);
   margin-bottom: 1rem;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-size: 2rem;
+  font-weight: bold;
+
 }
 
 .card-description {

@@ -46,38 +46,35 @@
 }
 
 .text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #162237;
-    font-size: 45px;
-    font-weight:700;
-    justify-content: space-evenly ;
-    z-index: 2;
-    padding: 0 70px; 
-    margin-top: 10%;
-    /* font-family: 'Montserrat', sans-serif; */
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    text-shadow: 1px 1px 2px #162237;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color:transparent;
+  font-size: 45px;
+  font-weight:700;
+  justify-content: space-evenly ;
+  z-index: 2;
+  padding: 0 70px; 
+  margin-top: 10%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px #162237;
 }
+
 .special-font {
-    font-family: 'Kepler', serif; /* Replace 'Kepler' with your desired font if it's not Kepler */
-    font-style: italic;
-    font-size: larger;
-    color: #fff;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #fff;
-  }
-  .glow {
-    /* text-shadow: 0 0 5px #ffffff, 0 0 5px #ffffff, 0 0 5px #ffffff, 0 0 5px #ffffff;  */
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #fff;
-  }
-  .no-glow {
-    text-shadow: none;
-  }
+/* font-family: 'Lora', serif; */
+font-size: larger;
+font-weight: bolder;
+}
+
+.glow {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+}
+
+.no-glow {
+  text-shadow: none;
+}
 .block
 {
     background: #fff;
