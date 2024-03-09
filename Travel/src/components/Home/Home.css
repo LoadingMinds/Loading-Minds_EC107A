@@ -49,9 +49,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  color:transparent;
+  color:#162237;
   font-size: 45px;
-  font-weight:700;
+  font-weight:500;
   justify-content: space-evenly ;
   z-index: 2;
   padding: 0 70px; 

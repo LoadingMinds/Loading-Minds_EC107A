@@ -15,23 +15,40 @@
     background-color: var(--background);
 }
 .chatbot-window {
-    position: fixed;
-    bottom: 80px;
-    right: 20px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
   }
   .chat-button {
     position: fixed;
     bottom: 50px;
     right: 30px;
-    background-image: url("../src/assets/bot.png"); /* replace with the path to your image */
+    z-index: 9999; /* Increase this value as needed */
+    display: flex; /* Add this line */
+    align-items: center; /* Add this line */
+    gap: 10px; /* Add this line */
+    padding: 10px; /* Add this line */
+    /* background: url("../src/assets/bot.png") no-repeat left center;  */
+    background-size: 20px 20px; /* adjust as needed */
+    color: #ffffff; /* adjust as needed */
+    border: none; /* adjust as needed */
+    cursor: pointer; /* adjust as needed */
+    border-radius: 20px; /* adjust as needed */
+    font-weight: 400;
+    background-color: rgb(198, 43, 102);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+  }
+
+  .chat-button:before {
+    content: ""; /* Add this line */
+    display: inline-block; /* Add this line */
+    width: 20px; /* Add this line */
+    height: 20px; /* Add this line */
+    background-image: url("../src/assets/bot.png");
     background-size: cover; /* adjust as needed */
-    color: white;
-    border-radius: 50%;
-    width: 80px; /* adjust as needed */
-    height: 60px; /* adjust as needed */
-    padding: 10px;
-    text-align: center;
-    line-height: 40px; /* adjust as needed */
   }
 :root{
     --background: #162237;
