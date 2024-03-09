@@ -40,8 +40,8 @@ const Book = () => {
 
 const BookingSection = styled.section`
   background-color: rgba(22, 34, 55, 1);
-  box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.5);
-  padding: 4rem 0;
+  padding-top: 60px;
+  padding-bottom:50px;
 `;
 
 const BookingContainer = styled.div`
@@ -65,6 +65,7 @@ const BookingForm = styled.form`
   border-radius: 8px;
   padding: 2rem;
   box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.5);
+  margin-bottom: 50px;
 `;
 
 const FormGroup = styled.div`
@@ -112,6 +113,7 @@ const MapContainer = styled.div`
   height: 400px;
  justify-content:center;
  align-items:center;
+ margin:40px;
 `;
 
 const MapImage = styled.img`

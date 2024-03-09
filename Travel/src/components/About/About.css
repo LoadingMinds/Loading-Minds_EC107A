@@ -1,67 +1,69 @@
 .about-container {
-    background-color: rgba(22, 34, 55, 1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Adjust this value as needed */
-    background: linear-gradient(to bottom, #090614, #162237);
-    width:100%;
-    padding-top: 100px;
+  background-color: rgba(22, 34, 55, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust this value as needed */
+  background: linear-gradient(to bottom, #090614, #162237);
+  width:100%;
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .about-section {
-    display: flex;
-    justify-content: space-between;
-    width: 80%; /* Adjust this value as needed */
+  display: flex;
+  justify-content: space-between;
+  width: 80%; /* Adjust this value as needed */
 }
 
 .text-section {
-    flex: 1;
-    padding-right: 20px;
-    color:rgba(115, 121, 133, 1)
+  flex: 1;
+  padding-right: 20px;
+  color:rgba(115, 121, 133, 1)
 }
 .text-section h2{
-    color:rgb(198, 43, 102);
+  color:rgb(198, 43, 102);
 }
 .image-section {
-    display: flex;
-    justify-content: flex-end;
-    flex: 1;
-    padding-left: 20px;
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+  padding-left: 20px;
 }
 
 .image-section img {
-    width: 80%;
-    height: auto;
+  width: 80%;
+  height: auto;
 }
 /* For tablets */
 @media (max-width: 768px) {
-    .about-section {
-      flex-direction: column;
-      width: 90%;
-    }
-  
-    .text-section,
-    .image-section {
-      padding: 10px 0;
-    }
-  
-    .image-section img {
-      width: 100%;
-    }
+  .about-section {
+    flex-direction: column;
+    width: 90%;
   }
-  
-  /* For mobile phones */
-  @media (max-width: 480px) {
-    .about-section {
-      width: 100%;
-    }
-  
-    .text-section h1 {
-      font-size: 24px; /* Adjust as needed */
-    }
-  
-    .image-section img {
-      width: 100%;
-    }
+
+  .text-section,
+  .image-section {
+    padding: 10px 0;
   }
+
+  .image-section img {
+    width: 100%;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+  .about-section {
+    width: 100%;
+  }
+
+  .text-section h1 {
+    font-size: 24px; /* Adjust as needed */
+  }
+
+  .image-section img {
+    width: 100%;
+  }
+}

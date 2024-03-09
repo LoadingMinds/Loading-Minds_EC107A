@@ -1,0 +1,414 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.singapore-page {
+    background-color: var(--background);
+    color: var(--text_color); 
+  }
+
+.pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    /* width: 100vw; */
+    border-radius: 12px;
+    border:none;
+    background: linear-gradient(to top, #162237, transparent), url(../assets/TRAVELLO\ \(3\).png) no-repeat center;
+    background-size: cover;
+    transition: ease-in-out 1s;
+    background-color: var(--background);
+}
+.pic:hover h3{
+    /* display: none; */
+    /* transition: ease-in-out 1s; */
+    opacity: 0;
+}
+
+h3{
+    display: flex;
+    /* transition: ease 1s; */
+    transition: opacity 1s, height 1s;
+    opacity: 1;
+    font-size: 3rem;
+}
+h4
+{
+    font-size: bolder;
+
+}
+/* .gpay-card-info-animation-container.black{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary_color);
+}
+.gpay-card-info-placeholder-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary_color);
+} */
+.google-pay-button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.buy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:transparent;
+    padding-bottom: 20px;
+}
+
+
+
+
+h1 {
+	text-align: center;
+}
+
+.plan {
+	padding: 0 20px;
+	width: 100%;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 40px 0;
+}
+
+.timeline-container::after {
+    background-color: var(--primary_color);
+    content: '';
+    position: absolute;
+    left: calc(50% - 2px);
+    width: 4px;
+    height: 100%;
+}
+
+.timeline-item {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+    position: relative;
+    margin: 10px 0;
+    width: 50%;
+}
+
+.timeline-item:nth-child(even) .timeline-item-content {
+    animation: slideInFromRight 1s ease-out;
+  }
+.timeline-item:nth-child(odd) {
+    animation: slideInFromLeft 1s ease-out;
+    align-self: flex-end;
+    justify-content: flex-start;
+    padding-left: 30px;
+    padding-right: 0;
+}
+
+.timeline-item-content {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    background-color: var(--primary_color);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 15px;
+    position: relative;
+    width: 800px;
+    max-width: 70%;
+    text-align: right;
+}
+
+.timeline-item-content::after {
+    content: ' ';
+    background-color: #fff;
+    box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    right: -7.5px;
+    top: calc(50% - 7.5px);
+    transform: rotate(45deg);
+    width: 15px;
+    height: 15px;
+}
+
+.timeline-item:nth-child(odd) .timeline-item-content {
+    text-align: left;
+    align-items: flex-start;
+}
+
+.timeline-item:nth-child(odd) .timeline-item-content::after {
+    right: auto;
+    left: -7.5px;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-item-content .tag {
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    top: 5px;
+    left: 5px;
+    letter-spacing: 1px;
+    padding: 5px;
+    position: absolute;
+    text-transform: uppercase;
+}
+
+.timeline-item:nth-child(odd) .timeline-item-content .tag {
+    left: auto;
+    right: 5px;
+}
+
+.timeline-item-content time {
+    color: #777;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.timeline-item-content p {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 15px 0;
+    max-width: 250px;
+}
+
+.timeline-item-content a {
+	color: #333;
+	text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.timeline-item-content a::after {
+    content: ' ►';
+    font-size: 12px;
+}
+
+.timeline-item-content .circle {
+    background-color: #fff;
+    border: 3px solid #e17b77;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 10px);
+    right: -40px;
+    width: 20px;
+    height: 20px;
+    z-index: 100;
+}
+
+.timeline-item:nth-child(odd) .timeline-item-content .circle {
+    right: auto;
+    left: -40px;
+}
+
+@media only screen and (max-width: 1023px) {
+    .timeline-item-content {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .timeline-item-content,
+    .timeline-item:nth-child(odd) .timeline-item-content {
+        padding: 15px 10px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .timeline-item-content .tag {
+        width: calc(100% - 10px);
+        text-align: center;
+    }
+
+    .timeline-item-content time {
+        margin-top: 20px;
+    }
+
+    .timeline-item-content a {
+        text-decoration: underline;
+    }
+
+    .timeline-item-content a::after {
+        display: none;
+    }
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh; /* Adjust as needed */
+  }
+.book-plan {
+    background-color: var(--primary_color); /* Green background */
+    border: none; /* No border */
+    color: white; /* White text */
+    padding: 15px 32px; /* Padding around the text */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* No underline */
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer; /* Pointer cursor on hover */
+    transition-duration: 0.4s; /* Transition effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+  }
+  
+  .book-plan:hover {
+    background-color: var(--secondary_color2); /* Darker green background on hover */
+  }
+
+  @media only screen and (max-width: 800px) {
+    .singapore-page {
+        padding: 10px;
+    }
+
+    .pic {
+        height: 40vh;
+        border-radius: 6px;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .plan {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    .timeline-container {
+        margin: 20px 0;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-right: 15px;
+    }
+
+    .timeline-item-content {
+        max-width: 100%;
+        padding: 10px;
+        width: 90%;
+    }
+    .timeline-container::after {
+       display: none;
+    }
+
+    .button-container {
+        height: 20vh;
+    }
+
+    .book-plan {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+  /* Style the form */
+.traveler-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
+    width: 50%;
+    padding: 20px;
+    /* background-color: #f2f2f2; */
+    border-radius: 5px;
+    color:var(--text_color2);
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba(13, 18, 84, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );  
+    color: var(--text_color);
+  }
+  
+  /* Style the labels */
+  .l1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  /* Style the input fields */
+  .l1 input[type="text"], 
+  .l1 input[type="email"], 
+  .l1 input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Style the submit button */
+  .l1 input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--primary_color);
+    color: white;
+    cursor: pointer;
+  }
+  
+  .l1 input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  @media (max-width: 768px) {
+    .traveler-form {
+      width: 90%;
+    }
+  
+    .l1 input[type="text"],
+    .l1 input[type="email"],
+    .l1 input[type="tel"] {
+      padding: 5px;
+      font-size: 14px; /* Adjust as needed */
+    }
+  }

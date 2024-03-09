@@ -1,15 +1,22 @@
-.getintouch {
+.contact-container{
     background-color: rgba(22, 34, 55, 1);
+    
+    
+}.getintouch {
+    
     padding: 100px 100px; 
 }
 
-.title {
+.title h2{
+    display: flex;
+    justify-content: center;
     text-align: center;
-    font-size: 30px;
-    margin-bottom: 40px;
-    color: #fff; 
+    margin-bottom: 100px;
+    color: #fff;
 }
-
+.for{
+    width:100%;
+}
 .sub-title {
     font-size: 36px;
     font-weight: bold;
@@ -113,9 +120,7 @@
 .contact-form {
     width: 50%;
     padding: 20px;
-    background-color: rgba(22, 34, 55, 1);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
 }
 
 .contact-form .title {
@@ -123,6 +128,7 @@
 }
 
 .contact-form .form-group {
+    width: 80%;
     margin-bottom: 20px;
 }
 
@@ -149,10 +155,14 @@
 }
 
 .contact-image img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
-
+@media (max-width: 1510px){
+    .contact-image img{
+        display:none;
+    }
+}
 @media (max-width: 480px) {
     .getintouch {
         padding: 50px 50px;
@@ -169,4 +179,5 @@
     .contact-form .btn {
         width: 100%;
     }
+    
 }
