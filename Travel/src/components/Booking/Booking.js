@@ -13,26 +13,27 @@ const sampleCards = [
     description: "In Singapore, a vibrant fusion of cultures creates a tapestry of flavors, traditions, and innovation.",
     price: "Cultures Collide, Innovation Thrives",
     image: standardRoomImage,
+    url: "singapore"
   },
   {
     title: "India",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     price: "$150 per night",
     image: deluxeRoomImage,
+    url: "india"
   },
   {
     title: "Europe",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     price: "$200 per night",
     image: suiteImage,
+    url: "europe"
   },
 ];
 
 const Carousel = ({ cards }) => {
   const navigate=useNavigate();
-  const gotoSingapore=()=>{
-    navigate("/singapore");
-  }
+ 
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
 
   useEffect(() => {
@@ -52,7 +53,7 @@ const Carousel = ({ cards }) => {
           <h3 className="card-title">{card.title}</h3>
           <p className="card-description">{card.description}</p>
           <p className="price">{card.price}</p>
-          <button className="book-button" onClick={gotoSingapore}>Know More</button>
+          <button className="book-button" onClick={()=>{navigate(`/${card.url}`)}}>Know More</button>
         </div>
       ))}
     </div>

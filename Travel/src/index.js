@@ -9,6 +9,9 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import SignIn from '../src/Pages/SignIn/SignIn';
 import Singapore from './Pages/Singapore';
+import India from './Pages/India';
+import Europe from './Pages/Europe';
+
 const router = createBrowserRouter([
   {
       path: "/",
@@ -21,6 +24,14 @@ const router = createBrowserRouter([
   {
     path: "/singapore",
     element: <Singapore/>,
+},
+  {
+    path: "/india",
+    element: <India/>,
+},
+  {
+    path: "/europe",
+    element: <Europe/>,
 },
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
