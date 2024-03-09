@@ -11,15 +11,57 @@
 {
     padding: 2rem;
 } */
+.main{
+    background-color: var(--background);
+}
+.chatbot-window {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+  }
+  .chat-button {
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    background-image: url("../src/assets/bot.png"); /* replace with the path to your image */
+    background-size: cover; /* adjust as needed */
+    color: white;
+    border-radius: 50%;
+    width: 80px; /* adjust as needed */
+    height: 60px; /* adjust as needed */
+    padding: 10px;
+    text-align: center;
+    line-height: 40px; /* adjust as needed */
+  }
 :root{
     --background: #162237;
     --primary_color: rgb(198, 43, 102);
     --secondary_color: #090614;
     --secondary_color2: #7D7C78;
-    --text_color: #7D7C78;
+    --text_color: #ffffff;
+    --text_color2: #7D7C78;
     /* --third_color: #FFE696; */
 
     --pc-large:80px;
     --pc-medium:40px;
     --pc-small:20px;
 }
+/* This will change the width of the scrollbar */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* This will change the background color of the scrollbar */
+  ::-webkit-scrollbar-track {
+    background: linear-gradient(to bottom, var(--background), var(--text_color2)); /* Replace with your desired colors */
+  }
+  
+  /* This will change the color of the scroll thumb (the part you drag) */
+  ::-webkit-scrollbar-thumb {
+    background: var(--primary_color);
+  }
+  
+  /* This will change the color of the scroll thumb when you hover over it */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #850a3d;
+  }

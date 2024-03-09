@@ -9,7 +9,7 @@
   left: 50%;
   top:5%;
   transform: translateX(-50%);
-  background-color: var(--secondary_color2);
+  background:transparent;
   overflow: hidden;
   padding: 0 10px;
   border-radius: 15px;
