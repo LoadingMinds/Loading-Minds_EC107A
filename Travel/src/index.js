@@ -11,7 +11,8 @@ import SignIn from '../src/Pages/SignIn/SignIn';
 import Singapore from './Pages/Singapore';
 import India from './Pages/India';
 import Europe from './Pages/Europe';
-
+// import Signup from '../src/Pages/Register/Register';
+import Register from '../src/Pages/Register/Register';
 const router = createBrowserRouter([
   {
       path: "/",
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: "/signin",
     element: <SignIn/>,
+  },
+  {
+    path: "/signup",
+    element: <Register/>,
   },
   {
     path: "/singapore",

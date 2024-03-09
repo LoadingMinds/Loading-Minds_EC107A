@@ -2,13 +2,19 @@ import React from 'react'
 import './Register.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { useNavigate } from "react-router-dom";
 const Register = () => {
+  const navigate=useNavigate();
+  const gotosignin=()=>{
+    navigate("/signin");
+  }
+
   return (
     <div id="signin" class="signin-container">
       <div class="forms-container">
         <div class="signin-signup">
           <form action="#" class="sign-in-form">
-            <h2 class="title">Sign in</h2>
+            <h2 class="title">Sign Up</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
               <input type="text" placeholder="Username" />
@@ -17,7 +23,7 @@ const Register = () => {
               <i class="fas fa-lock"></i>
               <input type="password" placeholder="Password" />
             </div>
-            <input type="submit" value="Login" class="btn solid" />
+            <input type="submit" value="SignUp" class="btn solid" />
             <p class="social-text">Or Sign in with social platforms</p>
             <div class="social-media">
             <FontAwesomeIcon className="social-icons" icon={faFacebook} size="2x" />
@@ -62,13 +68,12 @@ const Register = () => {
       <div class="panels-container">
         <div class="panel left-panel">
           <div class="content">
-            <h3>New here ?</h3>
+            <h3>Already a customer ?</h3>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
-              ex ratione. Aliquid!
+              Welcome back dear user kindly signin to your account
             </p>
-            <button class="btn transparent" id="sign-up-btn">
-              Sign up
+            <button class="btn transparent" onClick={gotosignin} id="sign-up-btn">
+              Sign In
             </button>
           </div>
           <img src="img/log.svg" class="image" alt="" />

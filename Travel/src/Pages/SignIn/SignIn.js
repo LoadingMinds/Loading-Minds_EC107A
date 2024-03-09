@@ -2,7 +2,12 @@ import React from 'react'
 import './SignIn.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { useNavigate } from "react-router-dom";
 const SignIn = () => {
+  const navigate=useNavigate();
+  const gotosignup=()=>{
+    navigate("/signup");
+  }
   return (
     <div id="signin" class="signin-container">
       <div class="forms-container">
@@ -64,10 +69,10 @@ const SignIn = () => {
           <div class="content">
             <h3>New here ?</h3>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
-              ex ratione. Aliquid!
+              
+              Join Us and explore the world with us
             </p>
-            <button class="btn transparent" id="sign-up-btn">
+            <button class="btn transparent" onClick={gotosignup} id="sign-up-btn">
               Sign up
             </button>
           </div>
