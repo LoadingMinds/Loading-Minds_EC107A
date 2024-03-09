@@ -17,15 +17,15 @@ const sampleCards = [
   },
   {
     title: "India",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    price: "$150 per night",
+    description: "In India, a vibrant tapestry of cultures weaves together a rich array of flavors, traditions, and innovation",
+    price: "Cultures Unite, Innovation Flourishes",
     image: deluxeRoomImage,
     url: "india"
   },
   {
     title: "Europe",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    price: "$200 per night",
+    description: "In Europe, a captivating blend of cultures creates a rich tapestry of flavors, traditions, and innovation.",
+    price: "Cultures Merge, Innovation Abounds",
     image: suiteImage,
     url: "europe"
   },
