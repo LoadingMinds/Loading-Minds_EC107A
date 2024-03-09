@@ -11,6 +11,7 @@ const Home = () => {
   const gotosignin=()=>{
     navigate("/signin");
   }
+  
   return (
     <div id="home" className='main_container section_padding'>
       <img src={Logo} alt="Logo" className="logo" style={{ width: '150px', height: 'auto' }} />

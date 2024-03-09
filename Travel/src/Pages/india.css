@@ -8,7 +8,7 @@
     color: var(--text_color); 
   }
 
-.pic {
+.inpic {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -410,5 +410,10 @@ h1 {
     .l1 input[type="tel"] {
       padding: 5px;
       font-size: 14px; /* Adjust as needed */
+    }
+  }
+  @media(max-width: 1000px){
+    .in{
+        display: flex;
     }
   }

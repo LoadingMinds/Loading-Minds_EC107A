@@ -412,3 +412,9 @@ h1 {
       font-size: 14px; /* Adjust as needed */
     }
   }
+  @media(max-width: 1000px){
+    .in{
+        display: flex;
+    }
+  }
+  

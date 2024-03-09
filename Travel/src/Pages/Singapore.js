@@ -45,7 +45,7 @@ const Singapore = () => {
     <>
        
       <div className="singapore-page">
-      <div className="pic section_margin">
+      <div className="sinpic section_margin">
         <h3>Singapore</h3>
       </div>
       <div className="text_box section_margin">
