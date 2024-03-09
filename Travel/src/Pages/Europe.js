@@ -1,7 +1,7 @@
 // import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import carousel styles
-import '../../src/Pages/singapore.css'; 
+import '../../src/Pages/europe.css'; 
 import React, { useState } from 'react';
 import GooglePayButton from '@google-pay/button-react';
 // Import your images

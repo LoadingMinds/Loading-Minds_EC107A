@@ -1,3 +1,11 @@
+
+.contact-form
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 .contact-container{
     background-color: rgba(22, 34, 55, 1);
     
@@ -35,6 +43,7 @@
     width: 50%; 
     transition: border-color 0.3s ease;
     color: #fff; 
+    
 }
 
 .form-control:focus {
@@ -118,7 +127,7 @@
 }
 
 .contact-form {
-    width: 50%;
+    width: 80%;
     padding: 20px;
     
 }
@@ -130,6 +139,9 @@
 .contact-form .form-group {
     width: 80%;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    
 }
 
 .contact-form .form-control {
@@ -163,21 +175,9 @@
         display:none;
     }
 }
-@media (max-width: 480px) {
+
+@media (max-width: 600px) {
     .getintouch {
         padding: 50px 50px;
     }
-
-    .form-control {
-        width: 100%;
-    }
-
-    .contact-form {
-        width: 100%;
-    }
-
-    .contact-form .btn {
-        width: 100%;
-    }
-    
 }
