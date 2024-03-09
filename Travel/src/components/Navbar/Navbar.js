@@ -16,29 +16,29 @@ const Navbar = () => {
           <span className="hamburger"></span>
         </span>
         <ul style={{ display: isChecked ? 'block' : 'none' }}>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">BOOKING</a></li>
-          <li><a href="#">TESTIMONIALS</a></li>
-          <li><a href="#">CONTACT</a></li>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#booking">BOOKING</a></li>
+          <li><a href="#testimonials">TESTIMONIALS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
         </ul>
       </label>
       <div className="nav__container">
       <div className="nav">
         <div className='icon-container'>
-          <div className='con'><a href="#">Home</a></div>
+          <div className='con'><a href="#home">Home</a></div>
         </div>
         <div className='icon-container'>
-          <div className='con'><a href="#">About</a></div>
+          <div className='con'><a href="#about">About</a></div>
         </div>
         <div className='icon-container'>
-          <div className='con'><a href="#">Booking</a></div>
+          <div className='con'><a href="#booking">Booking</a></div>
         </div>
         <div className='icon-container'>
-          <div className='con'><a href="#">Testimonials</a></div>
+          <div className='con'><a href="#testimonials">Testimonials</a></div>
         </div>
         <div className='icon-container'>
-          <div className='con'><a href="#">Contact </a></div>
+          <div className='con'><a href="#contact">Contact </a></div>
         </div>
       </div>
     </div>
