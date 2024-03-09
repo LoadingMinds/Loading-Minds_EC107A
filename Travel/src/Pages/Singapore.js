@@ -158,9 +158,9 @@ const Singapore = () => {
           transactionInfo: {
             totalPriceStatus: 'FINAL',
             totalPriceLabel: 'Total',
-            totalPrice: '1',
-            currencyCode: 'INR',
-            countryCode: 'IND',
+            totalPrice: '10000',
+            currencyCode: 'USD',
+            countryCode: 'US',
           },
           shippingAddressRequired: true,
           callbackIntents: ['SHIPPING_ADDRESS', 'PAYMENT_AUTHORIZATION'],
@@ -179,9 +179,8 @@ const Singapore = () => {
           }
         }
         existingPaymentMethodRequired='false'
-        buttonColor='white'
+        buttonColor='black'
         buttonType='Buy'
-        className='paybtn'
       />
       </div>
     </div>
