@@ -50,7 +50,7 @@ const India = () => {
       </div>
       <div className="text_box section_margin">
         <h4>View Description</h4>
-        <p>Singapore, a dynamic city-state nestled in Southeast Asia, captivates with its blend of modernity and tradition. Renowned for its efficient infrastructure, multicultural society, and thriving economy, Singapore is a global hub for finance, technology, and commerce. From iconic landmarks like Marina Bay Sands to its lush green spaces and delectable street food, Singapore offers a kaleidoscope of experiences that enchant visitors and residents alike. With its unwavering commitment to excellence and innovation, Singapore continues to shine as a beacon of progress on the world stage.</p>
+        <p>India, a land of contrasts and colors, boasts a rich tapestry of cultures, cuisines, and traditions. From the majestic Himalayas to the bustling streets of Delhi and Mumbai, India captivates with its diversity and history. With a legacy that spans millennia, India continues to inspire with its spirituality, resilience, and vibrant energy.</p>
       </div>
       <div className="plans section_margin">
         <h4>View Plans</h4>
